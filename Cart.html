@@ -1,0 +1,210 @@
+<section>
+  <h1>Your Cart</h1>
+  <div class="cart-list">
+    <div class="product-card">
+      <div class="product">
+        <img width="50" src="" alt="" />
+        <div class="dispFlex">
+          <p class="title"></p>
+          <p class="price">R</p>
+        </div>
+        <div class="dispFlex">
+          <p class="total">Total:</p>
+          <div class="buttons">
+            <button>-</button>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dispFlexRow">
+      <h4 class="finalTotalItmes">Total Items:</h4>
+      <h4 class="finalTotal">Total: R</h4>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 20vh;
+    color: antiquewhite;
+  }
+
+  .dispFlex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  h1 {
+    color: antiquewhite;
+    margin-top: 2vw;
+  }
+
+  p {
+    align-self: center;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: rgb(74, 74, 74);
+    border-radius: 15px;
+    color: rgb(255, 253, 239);
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .title {
+    padding-top: 10px;
+    width: 20vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .price {
+    padding-top: 10px;
+    width: 10vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .total {
+    padding: 10px;
+    width: 10vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .buttons {
+    align-self: center;
+    width: 30vw;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    img {
+      margin-top: 8px;
+      height: 80vw;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgb(255, 253, 239);
+      margin: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .title {
+      padding-top: 10px;
+      width: 10vw;
+      padding-left: 0;
+      padding-right: 0;
+      width: 60vw !important;
+    }
+
+    .price {
+      padding-top: 10px;
+      width: 10vw !important;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .total {
+      padding: 10px;
+      width: 40vw !important;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .buttons {
+      align-self: center;
+      width: 30vw !important;
+      margin-left: 20px;
+      margin-right: 5px;
+    }
+
+    .finalTotalItmes {
+      width: 40vw !important;
+    }
+
+    .finalTotal {
+      width: 40vw !important;
+    }
+  }
+
+  .dispFlexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  h4 {
+    padding: 15px;
+  }
+
+  .buttons {
+    align-self: center;
+    width: 100px;
+  }
+
+  .total {
+    width: 15vw;
+  }
+
+  button {
+    color: antiquewhite;
+    background-color: rgb(59, 59, 59);
+    border: none;
+    padding: 2px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: rgb(166, 159, 150);
+  }
+
+  .title {
+    width: 20vw;
+  }
+
+  .price {
+    width: 10vw;
+  }
+
+  .finalTotalItmes {
+    width: 15vw;
+  }
+
+  .finalTotal {
+    width: 15vw;
+  }
+</style>

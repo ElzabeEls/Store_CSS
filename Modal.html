@@ -1,0 +1,63 @@
+<dialog>
+  <div class="center">
+    <button>x</button>
+  </div>
+</dialog>
+
+<style>
+  dialog {
+    width: 90vw;
+    border-radius: 0.2em;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 0;
+    margin: auto;
+  }
+  dialog::backdrop {
+    background: #2a2929b1;
+  }
+  dialog > div {
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+    border: none;
+  }
+
+  dialog[open] {
+    animation: zoom 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  @keyframes zoom {
+    from {
+      transform: scale(0.95);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  dialog[open]::backdrop {
+    animation: fade 0.2s ease-out;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  button {
+    display: block;
+    color: rgb(255, 191, 0);
+    background-color: rgb(64, 64, 64);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 50%;
+    text-align: right;
+  }
+
+  .center {
+    display: flex;
+  }
+</style>

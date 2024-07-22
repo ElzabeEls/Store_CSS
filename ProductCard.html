@@ -1,0 +1,120 @@
+<div class="product-card">
+  <a href="">
+    <img src="" alt="" class="product" />
+  </a>
+  <div class="description">
+    <p class="title"></p>
+    <div class="priceAndCat">
+      <p class="category"></p>
+      <p class="price">R</p>
+    </div>
+    <div class="dispFlex">
+      <div class="dispFlexCol">
+        <div class="dispFlex">
+          <p>
+            <img src="" alt="" class="star" />
+            <span class="rating"></span>
+          </p>
+        </div>
+        <p class="count">Ratings</p>
+      </div>
+      <!-- Dynamically show "Add to Cart" or "Remove from Cart" -->
+      <button>
+        <img src="" alt="Remove from Cart" class="star" />
+        <img src="" alt="Add to Cart" class="star" />
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .product {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .star {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .description {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+
+  .priceAndCat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+
+  .category {
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .rating {
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding-left: 5px;
+  }
+
+  .count {
+    padding-top: 5px;
+  }
+
+  .price {
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .dispFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgb(74, 74, 74);
+    border-radius: 15px;
+    color: rgb(255, 253, 239);
+  }
+
+  button {
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .dispFlexCol {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
